@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'design-system';
+  title: number | string = 'design-system';
+
+  onGenericBtnClick(genericArgument: number | string) {
+    this.title = genericArgument;
+  }
 }
